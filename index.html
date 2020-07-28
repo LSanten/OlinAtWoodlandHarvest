@@ -11,6 +11,33 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script>
+		$(document).ready(function(){
+		  // Add smooth scrolling to all links
+		  $("a").on('click', function(event) {
+
+		    // Make sure this.hash has a value before overriding default behavior
+		    if (this.hash !== "") {
+		      // Prevent default anchor click behavior
+		      event.preventDefault();
+
+		      // Store hash
+		      var hash = this.hash;
+
+		      // Using jQuery's animate() method to add smooth page scroll
+		      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+		      $('html, body').animate({
+		        scrollTop: $(hash).offset().top
+		      }, 800, function(){
+		   
+		        // Add hash (#) to URL when done scrolling (default click behavior)
+		        window.location.hash = hash;
+		      });
+		    } // End if
+		  });
+		});
+		</script>
 	</head>
 	<body class="is-preload">
 
@@ -19,7 +46,7 @@
 
 				<!-- Header -->
 					<header id="header" class="alt">
-						<h1><a href="donate.html"><u>Support</u> Olin's sustainable semester</a></h1>
+						<h1><a href="#donate"><u>Support</u> Olin's sustainable semester</a></h1>
 						<!--<nav>
 							<a href="#menu">Menu</a>
 						</nav>
@@ -51,7 +78,7 @@
 							<p>Fundraiser for a sustainable micro-campus at an off-grid permaculture farm</a></p>
 							<p style="font-size:small;">Anya Jensen, Drew Chasse, Dylan Merzenich, Jeremy Skoler, Katie Goldstein, Leon Santen, Mia Skaggs, Odalys Benitez, Riley Zito, Sebastian Calvo, Whitney Xu</a></p>
 							<!-- IMMERSIVE SUSTAINABLE DESIGN EXPERIENCE-->
-							<a href="donate.html" class="special">Donate now</a>
+							<a href="#donate" class="special">Donate now</a>
 						</div>
 					</section>
 
@@ -61,12 +88,12 @@
 						<!-- One -->
 							<section id="one" class="wrapper spotlight style1">
 								<div class="inner">
-									<a href="donate.html" ><img src="https://www.justfundraising.com/fundraising-thermometer/thermo.php?id=26304" alt="fundraising thermometer" style="margin:auto;display:block;padding:0px 0 0px;max-width:85%;" /></a>
+									<a href="#donate" ><img src="https://www.justfundraising.com/fundraising-thermometer/thermo.php?id=26304" alt="fundraising thermometer" style="margin:auto;display:block;padding:0px 0 0px;max-width:85%;" /></a>
 									<div class="content">
 										<h2 style="color:black;">So far we have raised...</h2><br><br>
 										<a href="https://venmo.com/woodland-harvest" style="text-decoration:none" target="_blank"><img src="images/buttons/venmo.png" alt="donate with Venmo" width="180" /></a>
 										<p style="color:black">Any amount is helpful to us!</p>
-										<a href="donate.html" style="color:black" class="special">More donation options</a>
+										<a href="#donate" style="color:black" class="special">More donation options</a>
 										
 										
 										
@@ -115,7 +142,7 @@
 										</ul>
 
 										<p style="text-align:left">We are hoping to raise these funds by August 15th in order to give Lisa and Elizabeth time to purchase materials before our arrival in early September. Thank you so much for your contributions to our campaign!</p>
-										<a href="donate.html" class="special">Donate now</a>
+										<a href="#donate" class="special">Donate now</a>
 										
 
 									</div>
@@ -153,8 +180,54 @@
 											
 										</article>
 									</section>
-									<a href="donate.html" class="special">Donate now</a>
+									<a href="#donate" class="special">Donate now</a>
 									
+								</div>
+							</section>
+							<section id="donate"><p><br></p></section>
+							<section id="donate-two" class="wrapper spotlight style1">
+								<div class="inner" >
+									
+									<div class="content">									
+									<div class="row" style="text-align:left">
+										<div class="col-6 col-6-medium">
+											<h2 style="color:black" class="major">Options for your donation</h2>
+										</div>
+									</div>
+									<div class="row" style="text-align:left">
+											<div class="col-6 col-12-medium">
+											<p style="color:black">Any amount will be helpful to make next semester possible. Venmo and Cash App don't take any transaction fees. Please note that PayPal takes 2.9% of every donation.</p>
+											<p style="color:black">We can accept tax-deductible donations of $800 or more through a partnership with the Alliance of Community Trainers, our partnering 501(c)3 organization. If you would like to make a tax deductible donation please mail a check with "woodland harvest" in the memo to:</br><br>
+											Alliance of Community Trainers<br>
+											1405 Hillmont Street<br>
+											Austin, TX  78704</p>
+											
+											</div>
+											<div class="col-1 col-12-medium">
+											</div>
+											
+											<div class="col-3 col-12-medium">
+												
+												<p style="text-align:left">
+												<a href="https://venmo.com/woodland-harvest" style="text-decoration:none" target="_blank"><img src="images/buttons/venmo.png" alt="donate with Venmo" width="180" /></a></br></br><br>
+
+												<a href="https://cash.app/$woodlandharvest" target="_blank"><img src="images/buttons/cashapp.png" alt="donate with Cash App" width="180" /></a>
+
+												<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" style="text-align:left"><input type="hidden" name="cmd" value="_s-xclick"><input type="hidden" name="hosted_button_id" value="EDLZPFWEMX28C"><input type="image" src="images/buttons/paypal.png" width="180" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"><img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"></form>
+												</p>
+											</div>
+											<div class="col-2 col-12-medium">
+												<a href="#" ><img src="https://www.justfundraising.com/fundraising-thermometer/thermo.php?id=26304" alt="fundraising thermometer" style="margin:auto;display:block;padding:0px 0 0px;" height="320" /></a>
+											</div>
+											
+									</div>
+									<p style="text-align:left"><a href="index.html" style="color:black;font-size:smaller;"><u>Back to project overview</u></a></p>
+									
+									
+										
+										
+										
+									</div>
 								</div>
 							</section>
 
